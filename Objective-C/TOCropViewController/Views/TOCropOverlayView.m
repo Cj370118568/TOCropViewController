@@ -52,11 +52,20 @@ static const CGFloat kTOCropOverLayerCornerWidth = 20.0f;
 
 - (void)setup
 {
-    UIView *(^newLineView)(void) = ^UIView *(void){
-        return [self createNewLineView];
-    };
+  UIView *(^newLineView)(void) = ^UIView *(void){
+    UIView *view = [self createNewLineView];
+    view.backgroundColor = [UIColor colorWithRed:58/255.0 green:149/255.0 blue:254/255.0 alpha:1.0];
+    return view;
+  };
+  
+  UIView *(^clearLineView)(void) = ^UIView *(void){
+    UIView *view = [self createNewLineView];
+    view.backgroundColor = UIColor.clearColor;
+    return view;
+  };
 
-    _outerLineViews     = @[newLineView(), newLineView(), newLineView(), newLineView()];
+  _outerLineViews = @[clearLineView(), clearLineView(), clearLineView(), clearLineView()];
+
     
     _topLeftLineViews   = @[newLineView(), newLineView()];
     _bottomLeftLineViews = @[newLineView(), newLineView()];

@@ -627,31 +627,31 @@
 				TargetAttributes = {
 					144B8CC81D22CAFF0085D774 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 6LF3GMKZAB;
+						DevelopmentTeam = 599635K94G;
 						LastSwiftMigration = 0810;
 					};
 					220611961B2E6777001A467B = {
 						CreatedOnToolsVersion = 6.3.2;
-						DevelopmentTeam = 6LF3GMKZAB;
+						DevelopmentTeam = 599635K94G;
 						TestTargetID = 223424691ABBC0CD00BBC2B1;
 					};
 					223424691ABBC0CD00BBC2B1 = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = 6LF3GMKZAB;
+						DevelopmentTeam = 599635K94G;
 					};
 					2238CF1F1FC0269C0081B957 = {
 						CreatedOnToolsVersion = 9.1;
-						DevelopmentTeam = 6LF3GMKZAB;
+						DevelopmentTeam = 599635K94G;
 						ProvisioningStyle = Automatic;
 					};
 					2238CF3B1FC029A90081B957 = {
 						CreatedOnToolsVersion = 9.1;
-						DevelopmentTeam = 6LF3GMKZAB;
+						DevelopmentTeam = 599635K94G;
 						ProvisioningStyle = Automatic;
 					};
 					2F5062DB1F53E2D900AA9F14 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 6LF3GMKZAB;
+						DevelopmentTeam = 599635K94G;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -961,7 +961,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				DEVELOPMENT_TEAM = 599635K94G;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -990,7 +990,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				DEVELOPMENT_TEAM = 599635K94G;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1012,7 +1012,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				DEVELOPMENT_TEAM = 599635K94G;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -1032,7 +1032,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				DEVELOPMENT_TEAM = 599635K94G;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Objective-C/TOCropViewControllerTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -1158,7 +1158,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Objective-C/TOCropViewControllerExample/TOCropViewControllerExample.entitlements";
-				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				DEVELOPMENT_TEAM = 599635K94G;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1178,7 +1178,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Objective-C/TOCropViewControllerExample/TOCropViewControllerExample.entitlements";
-				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				DEVELOPMENT_TEAM = 599635K94G;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1205,7 +1205,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				DEVELOPMENT_TEAM = 599635K94G;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "$(SRCROOT)/Swift/CropViewControllerExample/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1230,7 +1230,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				DEVELOPMENT_TEAM = 599635K94G;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "$(SRCROOT)/Swift/CropViewControllerExample/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1259,7 +1259,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				DEVELOPMENT_TEAM = 599635K94G;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1324,7 +1324,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				DEVELOPMENT_TEAM = 599635K94G;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					TARGET_APP_EXTENSION,
@@ -1351,7 +1351,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				DEVELOPMENT_TEAM = 599635K94G;
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/Objective-C/TOCropViewControllerExample-Extension/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
