@@ -30,7 +30,7 @@ class ViewController: UIViewController, CropViewControllerDelegate, UIImagePicke
     
         // -- Uncomment these if you want to test out restoring to a previous crop setting --
         //cropController.angle = 90 // The initial angle in which the image will be rotated
-        //cropController.imageCropFrame = CGRect(x: 0, y: 0, width: 2848, height: 4288) //The initial frame that the crop controller will have visible.
+//        cropController.imageCropFrame = CGRect(x: 0, y: 0, width: 2848, height: 4288) //The initial frame that the crop controller will have visible.
     
         // -- Uncomment the following lines of code to test out the aspect ratio features --
         //cropController.aspectRatioPreset = .presetSquare; //Set the initial aspect ratio as a square

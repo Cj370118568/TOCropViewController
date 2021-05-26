@@ -377,7 +377,7 @@ static const CGFloat kTOCropViewControllerToolbarHeight = 0;
           }
         }
         else {
-            self.cropView.cropRegionInsets = UIEdgeInsetsMake(0.0f, 0.0f, insets.bottom, 0.0f);
+            self.cropView.cropRegionInsets = UIEdgeInsetsMake(insets.top, 0.0f, insets.bottom, 0.0f);
         }
 
         return;
@@ -1311,7 +1311,8 @@ static const CGFloat kTOCropViewControllerToolbarHeight = 0;
 //    else {
 //        insets.top = self.statusBarHeight;
 //    }
-
+  insets.top = 37.5;
+  insets.bottom = 37.5;
     return insets;
 }
 
