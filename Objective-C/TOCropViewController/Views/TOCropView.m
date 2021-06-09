@@ -94,6 +94,7 @@ typedef NS_ENUM(NSInteger, TOCropViewOverlayEdge) {
 /* Reset state data */
 @property (nonatomic, assign) CGSize originalCropBoxSize; /* Save the original crop box size so we can tell when the content has been edited */
 @property (nonatomic, assign) CGPoint originalContentOffset; /* Save the original content offset so we can tell if it's been scrolled. */
+@property (nonatomic, assign) CGRect originalFrame;
 @property (nonatomic, assign, readwrite) BOOL canBeReset;
 
 /* In iOS 9, a new dynamic blur effect became available. */
@@ -333,7 +334,7 @@ typedef NS_ENUM(NSInteger, TOCropViewOverlayEdge) {
     //save the size for checking if we're in a resettable state
     self.originalCropBoxSize = self.resetAspectRatioEnabled ? scaledImageSize : self.cropBoxFrame.size;
     self.originalContentOffset = self.scrollView.contentOffset;
-    
+  self.originalFrame = _cropBoxFrame;
     [self checkForCanReset];
     [self matchForegroundToBackground];
 }
@@ -687,7 +688,12 @@ typedef NS_ENUM(NSInteger, TOCropViewOverlayEdge) {
     if (clampMinFromTop && frame.size.height <= minSize.height + FLT_EPSILON) {
         frame.origin.y = CGRectGetMaxY(originFrame) - minSize.height;
     }
-    
+  if (self.croppingStyle == TOCropViewCroppingStyleFixRectangle) {
+    frame.origin.x = MAX(self.originalFrame.origin.x, frame.origin.x);
+    frame.origin.y = MAX(self.originalFrame.origin.y, frame.origin.y);
+    frame.size.width = MIN(self.originalFrame.size.width, frame.size.width);
+    frame.size.height = MIN(self.originalFrame.size.height, frame.size.height);
+  }
     self.cropBoxFrame = frame;
     
     [self checkForCanReset];

@@ -27,7 +27,8 @@
  */
 typedef NS_ENUM(NSInteger, TOCropViewCroppingStyle) {
     TOCropViewCroppingStyleDefault,     // The regular, rectangular crop box
-    TOCropViewCroppingStyleCircular     // A fixed, circular crop box
+    TOCropViewCroppingStyleCircular,     // A fixed, circular crop box
+  TOCropViewCroppingStyleFixRectangle //E辅来需求，裁剪框不超过图片尺寸，尺寸不能放大
 };
 
 /**

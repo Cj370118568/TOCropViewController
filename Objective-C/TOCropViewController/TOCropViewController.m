@@ -1303,17 +1303,21 @@ static const CGFloat kTOCropViewControllerToolbarHeight = 0;
 
 - (UIEdgeInsets)statusBarSafeInsets
 {
-    UIEdgeInsets insets = UIEdgeInsetsZero;
-//    if (@available(iOS 11.0, *)) {
-//        insets = self.view.safeAreaInsets;
-//        insets.top = self.statusBarHeight;
-//    }
-//    else {
-//        insets.top = self.statusBarHeight;
-//    }
-  insets.top = 37.5;
-  insets.bottom = 37.5;
-    return insets;
+  UIEdgeInsets insets = UIEdgeInsetsZero;
+  if (_croppingStyle == TOCropViewCroppingStyleFixRectangle) {
+    insets.top = 37.5;
+    insets.bottom = 37.5;
+    insets.left = -21;
+  } else {
+    if (@available(iOS 11.0, *)) {
+      insets = self.view.safeAreaInsets;
+      insets.top = self.statusBarHeight;
+    }
+    else {
+      insets.top = self.statusBarHeight;
+    }
+  }
+  return insets;
 }
 
 - (void)setMinimumAspectRatio:(CGFloat)minimumAspectRatio
